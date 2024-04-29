@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesona Indonesia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <header class="header" id="header">
+        <a href="#" class="logo">
+          <span>Pesona Indonesia</span>
+        </a>
+        <nav>
+          <ul class="navbar">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li><a href="bio.html">Biodata</a></li>
+			<li><a href="Rumus Bamgun.html">Rumus</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <section class="bio">
+      <div class="heading">
+        <span class="bio">BIODATA KITA</span>
+        <div class="line"></div>
+      </div>
+
+      <div class="member">
+        <div class="card">
+            <img src="galeri/fannisa.jpg" alt="Foto Profil" />
+            <div class="info">
+              <h2>Fannisa Raisya Sundari</h2>
+              <p>Kelas: XI 2</p>
+              <p>Tempat, Tanggal Lahir : Banyuwangi, 5 Juni 2006</p>
+              <p>Hobby : Memasak</p>
+              <p>Alamat : Perumahan Griya Permata Husada</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="galeri/novin.jpg" alt="Foto Profil" />
+            <div class="info">
+              <h2>Agis Novin Putri Arini</h2>
+              <p>Kelas: XI 2</p>
+              <p>Tempat, Tanggal Lahir : Banyuwangi, 30 November 2006</p>
+              <p>Hobby : Traveling</p>
+              <p>Alamat : Jl. Gunung Sari</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="galeri/putik.jpg" alt="Foto Profil" />
+            <div class="info">
+              <h2>Putik Kaleafitri Gitarini</h2>
+              <p>Kelas: XI 2</p>
+              <p>Tempat, Tanggal Lahir : Banyuwangi, 24 Oktober 2006</p>
+              <p>Hobby : Mendengarkan Musik</p>
+              <p>Alamat : Jl. Ikan Cakalang</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <script>
+      let prevScrollPos = window.pageYOffset;
+
+      window.onscroll = function() {
+          let currentScrollPos = window.pageYOffset;
+
+          if (prevScrollPos > currentScrollPos) {
+              document.getElementById("header").style.top = "0";
+          } else {
+              document.getElementById("header").style.top = "-100px";
+          }
+
+          prevScrollPos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>

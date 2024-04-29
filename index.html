@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesona Indonesia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section>
+      <header class="header" id="header">
+        <a href="#" class="logo">
+          <span>Pesona Indonesia</span>
+        </a>
+        <nav>
+          <ul class="navbar">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="galery.html">Galery</a></li>
+            <li><a href="bio.html">Biodata</a></li>
+			 <li><a href="Rumus Bamgun.html">Rumus</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+
+    <section class="content">
+      <div class="heading">
+        <span>WISATA ALAM</span>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <article>
+          <img src="galeri/kawah ijen.jpg" alt="Deskripsi Gambar" />
+          <h2>Kawah Ijen</h2>
+          <p>
+            Gunung Ijen adalah sebuah gunung berapi yang terletak di perbatasan
+            Kabupaten Banyuwangi dan Kabupaten Bondowoso, Jawa Timur, Indonesia.
+            Gunung ini memiliki ketinggian 2.386 mdpl. Salah satu fenomena alam
+            yang paling terkenal dari Gunung Ijen adalah blue fire (api biru) di
+            dalam kawah yang terletak di puncak gunung tersebut. Untuk mencapai
+            kawah Gunung Ijen di Banyuwangi, pengunjung dapat menggunakan kereta
+            api ekonomi dengan tujuan Banyuwangi dan turun di Stasiun Banyuwangi
+            Kota kemudian naik ojek dengan tujuan Kecamatan Licin dan Desa
+            Tamansari. Dari Tamansari, perjalanan dilanjutkan menuju Paltuding
+            dengan menumpang truk pengangkut belerang atau menggunakan bus dan
+            turun di Banyuwangi kota kemudian naik ojek bisa langsung ke
+            Paltuding atau ke Desa Tamansari juga bisa namun dengan menggunakan
+            bus tarif yang dikeluarkan akan lebih mahal. Pintu gerbang utama ke
+            Cagar Alam Taman Wisata Kawah Ijen terletak di Paltuding, yang juga
+            merupakan Pos PHPA (Perlindungan Hutan dan Pelestarian Alam).
+            Alternatif rute adalah Bondowoso - Wonosari - Tapen - Sempol -
+            Paltuding.
+          </p>
+        </article>
+      </div>
+      <div class="row">
+        <article>
+          <img src="galeri/baluran1.jpg" alt="Deskripsi Gambar" />
+          <h2>Baluran</h2>
+          <p>
+            kawasan taman nasional ini ditetapkan sebagai hutan lindung pada
+            tahun 1930 oleh Direktur Kebun Raya Bogor yang bernama K.W.
+            Dammerman. Statusnya kemudian diubah menjadi suaka margasatwa oleh
+            Gubernur Hindia Belanda pada tanggal 25 September 1937. Penetapan
+            ulang sebagai suaka margasatwa diadakan oleh Menteri Pertanian dan
+            Agraria melalui Surat Keputusan Nomor. SK/II/1962 tanggal 11 Mei
+            1962. Status taman nasional diperoleh pada tanggal 6 Maret 1980 oleh
+            Menteri Pertanian dan dikukuhkan lagi pada tahun 1997 oleh Menteri
+            kehutanan. Luas lahannya seluas 25.000 ha. Taman Nasional Baluran
+            berbatasan dengan Selat Madura di utara, Selat Bali di timur, Desa
+            Wonorejo dan Sungai Bajulmati di selatan dan, serta Sungai Klokoran
+            dan Desa Sumberanyar di barat.
+          </p>
+        </article>
+      </div>
+      <div class="row">
+        <article>
+          <img src="galeri/pulaumerah.jpg" alt="Deskripsi Gambar" />
+          <h2>Pulau Merah</h2>
+          <p>
+            Pulau Merah atau Pulo Merah ( Red Island dalam Bahasa Inggris)
+            adalah objek wisata pantai yang terletak di Kecamatan Pesanggaran,
+            Kabupaten Banyuwangi, Provinsi Jawa Timur. Di pantai ini terdapat
+            sebuah bukit hijau kecil dengan tanah berwarna merah yang terletak
+            di dekat bibir pantai. Bukit tersebut dapat dikunjungi dengan
+            berjalan kaki saat air laut surut.[1] Di Pulau Merah terdapat Pura
+            yang digunakan pemeluk agama Hindu melaksanakan ibadah ataupun
+            upacara Mekiyis. Kawasan wisata ini dikelola oleh Perum Perhutani
+            Unit II Jawa Timur, KPH Banyuwangi Selatan.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <script>
+      let prevScrollPos = window.pageYOffset;
+
+      window.onscroll = function() {
+          let currentScrollPos = window.pageYOffset;
+
+          if (prevScrollPos > currentScrollPos) {
+              document.getElementById("header").style.top = "0";
+          } else {
+              document.getElementById("header").style.top = "-100px";
+          }
+
+          prevScrollPos = currentScrollPos;
+      };
+    </script>
+  </body>
+</html>
